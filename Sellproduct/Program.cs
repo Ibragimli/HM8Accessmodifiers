@@ -72,7 +72,7 @@ namespace Sellproduct
                     inputstr = Console.ReadLine();
                     input = Convert.ToInt32(inputstr);
 
-                } while (int.TryParse(inputstr, out input));
+                } while (!int.TryParse(inputstr, out input));
                 return input;
 
             }
