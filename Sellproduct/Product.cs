@@ -19,7 +19,7 @@ namespace Sellproduct
 
             set
             {
-                if (value.Length > 3 && value.Length < 25)
+                if (!string.IsNullOrWhiteSpace(value) && value.Length > 3 && value.Length < 25)
                 {
                     _name = value;
                 }
